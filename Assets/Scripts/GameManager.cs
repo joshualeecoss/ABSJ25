@@ -6,41 +6,31 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private static GameManager instance;
-    public static GameManager Instance
+    public static GameManager instance;
+
+    void Awake()
     {
-        get
+        if (instance == null)
         {
-            if (!instance)
-            {
-                instance = new GameObject().AddComponent<GameManager>();
-                instance.name = instance.GetType().ToString();
-                DontDestroyOnLoad(instance.gameObject);
-            }
-            return instance;
+            instance = this;
         }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+        DontDestroyOnLoad(gameObject);
     }
 
-    string nextScene;
-
-    public void StartNewGame()
+    void Update()
     {
-        LoadNewScene("Area1");
+        Debug.Log(instance.gameObject.name);
     }
 
-    public void LoadNewScene(string scene)
+    public void QuitGame()
     {
-        SetSceneAfterLoad(scene);
-        SceneManager.LoadScene("Loading");
-    }
-
-    public void SetSceneAfterLoad(string scene)
-    {
-        nextScene = scene;
-    }
-
-    public string GetSceneAfterLoad()
-    {
-        return nextScene;
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+        Application.Quit();
     }
 }
