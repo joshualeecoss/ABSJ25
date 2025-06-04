@@ -122,7 +122,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &205548448
+
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -255,6 +255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickUpText: {fileID: 0}
 --- !u!1 &794573476
+
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -262,9 +263,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 794573479}
-  - component: {fileID: 794573478}
-  - component: {fileID: 794573477}
+  - component: {fileID: 772405246}
+  - component: {fileID: 772405245}
+  - component: {fileID: 772405244}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -272,21 +273,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &794573477
+--- !u!81 &772405244
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794573476}
+  m_GameObject: {fileID: 772405243}
   m_Enabled: 1
---- !u!20 &794573478
+--- !u!20 &772405245
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794573476}
+  m_GameObject: {fileID: 772405243}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -323,13 +324,13 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &794573479
+--- !u!4 &772405246
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794573476}
+  m_GameObject: {fileID: 772405243}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -338,6 +339,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+
 --- !u!1 &881497646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1514,3 +1516,4 @@ PolygonCollider2D:
     - - {x: 0, y: 0.5773587}
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
+
