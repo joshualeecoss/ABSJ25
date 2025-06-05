@@ -28,6 +28,12 @@ public class GameManager : MonoBehaviour
 
     public void QuitGame()
     {
+        // HACK: Wait a second before quitting for sound to play
+        Invoke("QuitGameWaiter", 1);
+    }
+
+    void QuitGameWaiter()
+    {
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
