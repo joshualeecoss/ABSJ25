@@ -12,13 +12,16 @@ public class PlayerController : MonoBehaviour
     private Vector2 moveInput;
     private Vector2 moveVelocity;
 
+    private SpriteRenderer sr;
+
     // Collectable variables
     // private GameObject nearbyCollectable;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
+        sr = GetComponentInChildren<SpriteRenderer>();
+
         // Stops the Z-axis rotation when colliding with objects
         rb.freezeRotation = true;
     }
@@ -28,6 +31,15 @@ public class PlayerController : MonoBehaviour
         // Get input from player
         moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
         moveVelocity = moveInput * moveSpeed;
+
+        if (moveVelocity.x < 0)
+        {
+            sr.flipX = true;
+        }
+        else if (moveVelocity.x > 0)
+        {
+            sr.flipX = false;
+        }
 
         // Retrieve Collectable with E key
         // if (Input.GetKeyDown(KeyCode.E) && nearbyCollectable != null)
@@ -74,12 +86,12 @@ public class PlayerController : MonoBehaviour
     }
 
     void OnTriggerExit2D(Collider2D other)
-{
-    // Leaving upon trigger activating
-    // if (other.gameObject == nearbyCollectable)
-    // {
-    //     nearbyCollectable = null;
-    //     Debug.Log("Moved away from collectable.");
-    // }
-}
+    {
+        // Leaving upon trigger activating
+        // if (other.gameObject == nearbyCollectable)
+        // {
+        //     nearbyCollectable = null;
+        //     Debug.Log("Moved away from collectable.");
+        // }
+    }
 }
