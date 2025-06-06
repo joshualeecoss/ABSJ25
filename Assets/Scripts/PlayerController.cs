@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 moveVelocity;
 
     // Collectable variables
-    // private GameObject nearbyCollectable;
+    private GameObject nearbyCollectable;
 
     void Start()
     {
@@ -30,17 +30,16 @@ public class PlayerController : MonoBehaviour
         moveVelocity = moveInput * moveSpeed;
 
         // Retrieve Collectable with E key
-        // if (Input.GetKeyDown(KeyCode.E) && nearbyCollectable != null)
-        // {
-        //     Debug.Log("Collected: " + nearbyCollectable.name);
-        //     // Here you can increase score, inventory, etc.\
-        //     Destroy(nearbyCollectable);
-        //     nearbyCollectable = null;
-        // }
-        // if (nearbyCollectable != null)
-        // {
+        if (Input.GetKeyDown(KeyCode.E) && nearbyCollectable != null)
+        {
+            // Debug.Log("Collected: " + nearbyCollectable.name);
+            Destroy(nearbyCollectable);
+            nearbyCollectable = null;
+        }
+        if (nearbyCollectable != null)
+        {
 
-        // }
+        }
     }
 
     void FixedUpdate()
@@ -66,20 +65,20 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Triggered with: " + other.name);
 
-        // if (other.CompareTag("Collectable"))
-        // {
-        //     nearbyCollectable = other.gameObject;
-        //     Debug.Log("Can collect: " + other.name);
-        // }
+        if (other.CompareTag("Collectable"))
+        {
+            nearbyCollectable = other.gameObject;
+            //Debug.Log("Can collect: " + other.name);
+        }
     }
 
     void OnTriggerExit2D(Collider2D other)
 {
     // Leaving upon trigger activating
-    // if (other.gameObject == nearbyCollectable)
-    // {
-    //     nearbyCollectable = null;
-    //     Debug.Log("Moved away from collectable.");
-    // }
+    if (other.gameObject == nearbyCollectable)
+    {
+        nearbyCollectable = null;
+        //Debug.Log("Moved away from collectable.");
+    }
 }
 }
