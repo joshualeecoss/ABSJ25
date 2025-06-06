@@ -77,7 +77,7 @@ public class LoadNewScene : MonoBehaviour
         {
             // Load percent text output
             progressValue = Mathf.Clamp01(loadingOperation.progress / 0.9f);
-            percentLoaded.text = Mathf.Round(progressValue * 100) + "%";
+            percentLoaded.text = Mathf.Round(progressValue * 100).ToString();
 
             // Prevent loading screen from flashing too quickly even if loading is done
             if ((loadTimer > minLoadTime) && (Mathf.Approximately(loadingOperation.progress, 0.9f)))
