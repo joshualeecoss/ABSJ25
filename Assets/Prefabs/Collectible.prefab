@@ -47,6 +47,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickUpText: {fileID: 0}
+  collectableName: 
+  inspirationValue: 1
 --- !u!58 &2795005876560921824
 CircleCollider2D:
   m_ObjectHideFlags: 0

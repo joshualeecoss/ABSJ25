@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Photography.unity
     guid: 75eacb6e519fe7d4b980997bc0e453d0
+  - enabled: 1
+    path: Assets/Scenes/Music.unity
+    guid: 656c659ea8b4834449008a1f2ef8c652
+  - enabled: 1
+    path: Assets/Scenes/Drama.unity
+    guid: 3881be5a4c8747c4e96dac0f467a35ac
   m_configObjects: {}
