@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 44c5a808574cb4e45b0e6fbd399a30a7
+guid: 5c2dc29f6d838a34faf6fb6ec6d797c4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,28 +103,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: standard_size_-_drama_background-_shelf_0
-      rect:
-        serializedVersion: 2
-        x: 348
-        y: 369
-        width: 615
-        height: 642
-      alignment: 9
-      pivot: {x: 0.88427186, y: 0.5049745}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f477c962fce488478498323c73a1b94
-      internalID: -1523042211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -135,8 +114,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      standard_size_-_drama_background-_shelf_0: -1523042211
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
