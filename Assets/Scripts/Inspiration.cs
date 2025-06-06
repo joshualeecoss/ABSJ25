@@ -14,7 +14,7 @@ public class Inspiration : MonoBehaviour
     [Header("UI")]
     // Assign your UI slider here
     [SerializeField]
-    private Slider inspirationSlider; 
+    private Slider inspirationSlider;
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -34,6 +34,7 @@ public class Inspiration : MonoBehaviour
     public void AddInspiration(int amount)
     {
         currentInspiration = Mathf.Clamp(currentInspiration + amount, 0, maxInspiration);
+        GameManager.instance.AddInspiration(amount);
         UpdateUI();
         Debug.Log($"Inspiration increased to {currentInspiration}");
     }
@@ -45,6 +46,16 @@ public class Inspiration : MonoBehaviour
             inspirationSlider.maxValue = maxInspiration;
             inspirationSlider.value = currentInspiration;
         }
+    }
+
+    public void SetInspirationSlider(Slider slider)
+    {
+        inspirationSlider = slider;
+    }
+
+    public void ResetCurrentInspiration()
+    {
+        currentInspiration = 0;
     }
 
     // Optional: Get current amount

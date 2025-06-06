@@ -2051,6 +2051,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2084425184}
   - component: {fileID: 2084425183}
+  - component: {fileID: 2084425185}
+  - component: {fileID: 2084425186}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2070,6 +2072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cf127a5c77e31c4fb15a881cc644267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalInspiration: 0
 --- !u!4 &2084425184
 Transform:
   m_ObjectHideFlags: 0
@@ -2085,3 +2088,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2084425185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084425182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272d4ef7073fa554a90aef731a1d7021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxInspiration: 3
+  currentInspiration: 0
+  inspirationSlider: {fileID: 0}
+--- !u!114 &2084425186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084425182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4a2deac0d3cd414884c79da10b7061d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetScene: 

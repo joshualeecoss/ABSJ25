@@ -13,7 +13,7 @@ public class Collectable : MonoBehaviour
 
     private bool pickUpAllowed;
 
-    private int inspirationValue = 25;
+    private int inspirationValue = 1;
 
     // Use this for initialization
     private void Start()

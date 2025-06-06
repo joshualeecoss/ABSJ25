@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    public int totalInspiration = 0;
+
     void Awake()
     {
         if (instance == null)
@@ -24,6 +26,21 @@ public class GameManager : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public void AddInspiration(int inspiration)
+    {
+        totalInspiration += inspiration;
+        if (totalInspiration == 3)
+        {
+            GetComponent<SceneLoadTrigger>().SetTargetScene("Drama");
+            GetComponent<SceneLoadTrigger>().LoadScene();
+        }
+        else if (totalInspiration == 6)
+        {
+            GetComponent<SceneLoadTrigger>().SetTargetScene("Music");
+            GetComponent<SceneLoadTrigger>().LoadScene();
+        }
     }
 
     public void QuitGame()

@@ -17,4 +17,9 @@ public class SceneLoadTrigger : MonoBehaviour
         LoadingData.sceneToLoad = targetScene;
         SceneManager.LoadSceneAsync(LoadingData.sceneToLoad, LoadSceneMode.Single);
     }
+
+    public void SetTargetScene(string newScene)
+    {
+        targetScene = newScene;
+    }
 }
