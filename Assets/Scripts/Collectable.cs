@@ -33,7 +33,7 @@ public class Collectable : MonoBehaviour
         if (collision.gameObject.name.Equals("Player")) // Changed to string "Player" (Josh)
         {
             pickUpText.gameObject.SetActive(true);
-            pickUpText.text = collectableName + " (press E)";
+            pickUpText.text = collectableName + "  (press E)";
             pickUpAllowed = true;
         }
     }
