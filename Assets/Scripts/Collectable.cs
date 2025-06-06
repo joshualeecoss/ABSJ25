@@ -13,6 +13,8 @@ public class Collectable : MonoBehaviour
 
     private bool pickUpAllowed;
 
+    private int inspirationValue = 25;
+
     // Use this for initialization
     private void Start()
     {
@@ -49,6 +51,17 @@ public class Collectable : MonoBehaviour
 
     private void PickUp()
     {
+        // Add inspiration
+        if (Inspiration.Instance != null)
+        {
+            Inspiration.Instance.AddInspiration(inspirationValue);
+        }
+        else
+        {
+            Debug.LogWarning("Inspiration system not found in the scene.");
+        }
+
+        // Clean up
         Destroy(gameObject);
     }
 }
