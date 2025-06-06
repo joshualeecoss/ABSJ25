@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 44c5a808574cb4e45b0e6fbd399a30a7
+guid: 132380e92b3620248b857ead4b2b1c1f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,10 +45,10 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.33699268, y: 0.15698235}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 1871, y: 374, z: 4266, w: 2303}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -105,22 +105,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: standard_size_-_drama_background-_shelf_0
+      name: Monkey_Music_drums_0
       rect:
         serializedVersion: 2
-        x: 348
-        y: 369
-        width: 615
-        height: 642
+        x: 1943
+        y: 424
+        width: 1731
+        height: 1734
       alignment: 9
-      pivot: {x: 0.88427186, y: 0.5049745}
+      pivot: {x: 0.5845604, y: 0.0625818}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f477c962fce488478498323c73a1b94
-      internalID: -1523042211
+      spriteID: 2b209693ce20dab449d16591a2ce6668
+      internalID: -1115775272
       vertices: []
       indices: 
       edges: []
@@ -129,14 +129,14 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      standard_size_-_drama_background-_shelf_0: -1523042211
+      Monkey_Music_drums_0: -1115775272
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

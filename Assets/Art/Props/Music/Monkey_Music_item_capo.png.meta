@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 44c5a808574cb4e45b0e6fbd399a30a7
+guid: 1b0a283be73c6cf4ba9e0de6ec4e1caf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,22 +105,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: standard_size_-_drama_background-_shelf_0
+      name: Monkey_Music_item_capo_0
       rect:
         serializedVersion: 2
-        x: 348
-        y: 369
-        width: 615
-        height: 642
-      alignment: 9
-      pivot: {x: 0.88427186, y: 0.5049745}
+        x: 2248
+        y: 3666
+        width: 137
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f477c962fce488478498323c73a1b94
-      internalID: -1523042211
+      spriteID: 4a5deb78c2dfb5e4481b1aa371a2fc59
+      internalID: 2142128379
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      standard_size_-_drama_background-_shelf_0: -1523042211
+      Monkey_Music_item_capo_0: 2142128379
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
