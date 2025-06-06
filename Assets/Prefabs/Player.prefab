@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3254996129960589321}
   - component: {fileID: 3254996129960589320}
   m_Layer: 0
-  m_Name: standard_size-_Marcel
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
