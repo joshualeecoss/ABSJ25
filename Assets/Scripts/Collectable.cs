@@ -10,6 +10,8 @@ public class Collectable : MonoBehaviour
     private TextMeshProUGUI pickUpText; // Changed to TextMeshPro object (Josh)
     [SerializeField]
     private string collectableName; // Added variable (Josh)
+    [SerializeField]
+    private AudioSource pickupAudio;
 
     private bool pickUpAllowed;
 
@@ -60,6 +62,9 @@ public class Collectable : MonoBehaviour
         {
             Debug.LogWarning("Inspiration system not found in the scene.");
         }
+        
+        // Play sound
+        pickupAudio.Play();
 
         // Clean up
         Destroy(gameObject);
