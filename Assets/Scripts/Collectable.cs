@@ -64,7 +64,7 @@ public class Collectable : MonoBehaviour
         }
         
         // Play sound
-        pickupAudio.Play();
+        pickupAudio?.Play();
 
         // Clean up
         Destroy(gameObject);
