@@ -41,6 +41,11 @@ public class GameManager : MonoBehaviour
             GetComponent<SceneLoadTrigger>().SetTargetScene("Music");
             GetComponent<SceneLoadTrigger>().LoadScene();
         }
+        else if (totalInspiration == 9)
+        {
+            GetComponent<SceneLoadTrigger>().SetTargetScene("Credits");
+            GetComponent<SceneLoadTrigger>().LoadScene();
+        }
     }
 
     public void QuitGame()
