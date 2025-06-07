@@ -8,6 +8,10 @@ public class PauseMenu : MonoBehaviour
     public static bool isPaused = false;
 
     public GameObject pauseMenuUI;
+    [SerializeField]
+    private AudioSource pauseAudio;
+    [SerializeField]
+    private AudioSource resumeAudio;
 
     void Update()
     {
@@ -29,6 +33,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+        resumeAudio?.Play();
     }
 
     private void Pause()
@@ -36,6 +41,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+        pauseAudio?.Play();
     }
 
 }
